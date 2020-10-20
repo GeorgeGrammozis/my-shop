@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+.primary-color{
+	color: #C70039;
+}
+
+.secondary-color{
+	color: #FF5733;
+}
+
 .cf:before,
 .cf:after{
 	content: "";
@@ -14,17 +22,79 @@
 	clear: both;
 }
 
+.error{
+  display: none;
+  color: #a94543;
+  background-color: #f9f0f2;
+  border: thin solid #ffaec0;
+  width: 100%;
+  padding: 10px;
+}
+
+.success{
+  background-color: #dff0d8;
+  color: green;
+  width: 100%;
+  padding: 10px;
+  border: thin solid #96c583;
+  display: none;
+  line-height: 24px;
+}
+
+.success a{
+  font-weight: 700;
+  color: green;
+}
+
+.success a:hover{
+  text-decoration: underline;
+}
+
+.fade-out{
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.fade-in{
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.info{
+  color: #888;
+  margin-bottom: 10px;
+  line-height: 26px;
+}
+
+.info span{
+  color: #333;
+  font-weight: 700;
+}
+
+.info a{
+ color: #333;
+font-weight: 700;
+text-decoration: underline;
+}
+
+.info a:hover{
+  text-decoration: none;
+}
+
 select{
 	padding: 10px;
 	margin-bottom: 5px;
 }
+
 input[type=text],
 input[type=password],
 input[type=email]
 {
 	padding: 10px;
 	margin-bottom: 10px;
+	width: 100%;
 }
+
 input[type=submit]{
 	padding: 10px 0;
 	background-color: #333;
@@ -33,11 +103,18 @@ input[type=submit]{
 	margin-top: 10px;
 	width: 40%;
 }
+
 input[type=submit]:hover{
 	background-color: #111;
 }
+
 textarea{
-	padding: 10px;
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  padding: 10px;
+  font-family: "open-sans", sans-serif;
+  font-size: 15px; 
 }
 
 html{
@@ -48,6 +125,11 @@ body{
 	font-size: 14px;
 	width: 100%;
 	height: 100%;
-	font-family: "Roboto Slab", "serif";
+	font-family: 'Lato', sans-serif;
+	background-color: #fff;
 }
 
+.page{
+  max-width: 1200px;
+  margin: 0 auto;
+}
