@@ -32,7 +32,7 @@ a{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.4);
 	width: 100vw;
 	height: 100vh;
 	z-index: 30;
@@ -124,6 +124,12 @@ button.details:hover{
 
 /* TEXT ---------------------------------------------------------------- */
 /*-----------------------------------------------------------------------*/
+
+a.brand{
+	font-size: 18px;
+	padding-top: 20px;
+	color: #333 !important;
+}
 
 .info{
   color: #888;
@@ -223,7 +229,7 @@ body{
 .nav-wrap{
 	/*background-color: mediumseagreen;*/
 	/*background-color: black;*/
-	/*border-bottom: 1px solid #d4d4d4;*/
+	border-bottom: 1px solid #d4d4d4;
 }
 
 .nav-wrap .mobile-nav{
@@ -246,10 +252,6 @@ body{
 	font-weight: 600;
 }
 
-.nav-wrap .mobile-nav a.brand{
-	font-size: 18px;
-	padding-top: 20px;
-}
 
 .nav-wrap .mobile-nav a i{
 	padding-right: 15px;
@@ -341,19 +343,16 @@ nav .icons .nav-badge{
 		right: 0;
 		margin: auto;
 		width: 0%;
-		/*color: transparent;*/
 		background: #aaa;
-		height: 1px;
+		height: 2px;
 		transition: all 0.3s ease;
-
 	}
 
 	nav .middle a:hover{
 		color: #333;
 	}
 
-	nav .middle a:hover::after
-	{
+	nav .middle a:hover::after{
 		width: 100%;
 	}
 
@@ -365,9 +364,9 @@ nav .icons .nav-badge{
 /* LOGIN FORM, REGISTER FORM ------------------------------------------- */
 /*-----------------------------------------------------------------------*/
 
-.login-screen, .register-screen{
+.login-screen, .register-screen, .cart-screen{
 	background-color: white;
-	width: 300px;
+	width: 50vw;
 	height: 100vh;
 	transform: translateX(100%);
 	z-index: 99;

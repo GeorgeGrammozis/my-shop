@@ -13,19 +13,12 @@
 		<a onclick="showRegisterScreen()" ><i class="fas fa-user"></i> ΔΗΜΙΟΥΡΓΙΑ ΛΟΓΑΡΙΑΣΜΟΥ </a>
 	</div>
 
-	<div class="login-screen">
-		<h1>Login form</h1>
-	</div>
-	<div class="register-screen">
-		<h1>Register form</h1>
-	</div>
-	
 	<!-- THE MAIN NAVIGATION ---------------------------------------------------------- -->
 	<!-- ------------------------------------------------------------------------------ -->
 	
 	<nav class="page"> <!-- display flex -->
 		<div class="left">
-			<?php echo BRAND_NAME; ?>
+			<a class="brand"><?php echo BRAND_NAME; ?></a>
 		</div>
 
 		<div class="right">
@@ -47,6 +40,24 @@
 				</div>
 			</div>
 		</div>
-
 	</nav>
+
+	<!-- THE MODALS TRIGGERED FROM THE NAVBAR ----------------------------------------- -->
+	<!-- ------------------------------------------------------------------------------ -->
+	
+	<!-- the login screen -->
+	<div class="login-screen">
+		<?php include "html/login-form.php"; ?>
+	</div>
+
+	<!-- the register screen -->
+	<div class="register-screen">
+		<?php include "html/register-form.php"; ?>
+	</div>
+		
+	<!-- the cart screen -->
+	<div class="cart-screen">
+		<?php include "html/sidecart.php"; ?>
+	</div>	
+
 </div>
