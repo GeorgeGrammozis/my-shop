@@ -20,12 +20,9 @@
 	</div>
 
 	<div class="page">
-		
 		<div class="block">
 			<button class="details">Λεπτομέρειες <i class="fas fa-envelope-open"></i> </button>
 		</div>
-
-
 	</div>
 
 <script src="js/functions.js"></script>	
